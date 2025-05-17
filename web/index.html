@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/92ae492e58.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.153.0/build/three.min.js"></script>
+</head>
+
+<body class="page-fade">
+<script src="indeex.javascript"></script>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/alex.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="mywork.html">Portofolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+        <p>UI/UX Designer</p>
+        <h1>Hi, i'm <span>alex</span><br>From Indonesia</h1>
+        <div class="animated-subtitle" id="animatedSubtitle"></div>
+        </div>
+    </div>
+</div>
+<!-- ------about------- -->     
+
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="foto/foto 1.jpg" alt="">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About me</h1>
+                <p> Hello! I am a passionate designer and developer who loves creating modern, user-friendly digital experiences. I enjoy solving problems and bringing ideas to life through design and code.</p>
+
+                <div class="tab-titles">
+                  <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                  <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                  <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-slider">
+                  <div class="tab-contents active-tab" id="skills">
+                    <ul class="skills-list">
+                      <li>
+                        <i class="fa-solid fa-palette"></i>
+                        <span>UI/UX</span>
+                        <div class="desc">Expert in designing intuitive and visually appealing web and app interfaces.</div>
+                      </li>
+                      <li>
+                        <i class="fa-solid fa-code"></i>
+                        <span>Web Development</span>
+                        <div class="desc">Building responsive, high-performance websites with modern technologies.</div>
+                      </li>
+                      <li>
+                        <i class="fa-solid fa-mobile-screen-button"></i>
+                        <span>App Development</span>
+                        <div class="desc">Developing seamless mobile apps for both Android and iOS platforms.</div>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="tab-contents" id="experience">
+                    <div class="timeline">
+                      <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                          <span class="timeline-title">2023 – Present</span>
+                          <span class="timeline-role">Frontend Developer at XYZ Studio</span>
+                          <div class="timeline-desc">Developing and maintaining modern web applications with React, Vue, and Next.js. Collaborate with designers to deliver seamless user experiences.</div>
+                        </div>
+                      </div>
+                      <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                          <span class="timeline-title">2021 – 2023</span>
+                          <span class="timeline-role">UI/UX Designer at Creative Agency</span>
+                          <div class="timeline-desc">Designed intuitive interfaces and prototypes for mobile and web apps, focusing on usability and visual impact.</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tab-contents" id="education">
+                    <div class="timeline">
+                      <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                          <span class="timeline-title">2017 – 2021</span>
+                          <span class="timeline-role">Bachelor of Computer Science</span>
+                          <div class="timeline-desc">Bandung Institute of Technology (ITB)<br>Specialized in software engineering and human-computer interaction.</div>
+                        </div>
+                      </div>
+                      <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                          <span class="timeline-title">2014 – 2017</span>
+                          <span class="timeline-role">High School Science Major</span>
+                          <div class="timeline-desc">SMA Negeri 1 Bandung<br>Active in IT club and design competitions.</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ------services------- -->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-col-1">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>UI/UX Design</h2>
+                <p>Transform your ideas into stunning digital experiences with intuitive and visually captivating interfaces. I specialize in crafting user journeys that not only look beautiful but also feel effortless to navigate, ensuring your audience stays engaged and delighted at every touchpoint. From wireframes to high-fidelity prototypes, every detail is designed with your users in mind.</p>
+                <a href="mywork.html">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-crop-simple"></i>
+                <h2>Web Development</h2>
+                <p>Bring your vision to life with modern, responsive websites that perform flawlessly across all devices. I build high-performance web solutions tailored to your business goals, combining clean code, the latest technologies, and seamless interactivity. Whether you need a landing page or a complex web application, I deliver results that are fast, secure, and scalable.</p>
+                <a href="mywork.html">Learn more</a>
+            </div>
+            <div class="app-dev-service">
+              <i class="fa-brands fa-app-store icon-bounce"></i>
+              <i class="fa-brands fa-figma icon-bounce"></i>
+              <i class="fa-brands fa-whatsapp icon-bounce"></i>
+              <i class="fa-brands fa-apple icon-bounce"></i>
+              <i class="fa-solid fa-mobile-screen-button"></i>
+              <h2>App Development</h2>
+              <p>Turn your concepts into powerful mobile applications that stand out in today’s digital landscape. I design and develop apps with a focus on smooth user experience, elegant design, and robust functionality. From brainstorming to launch, I ensure your app not only meets your needs but also exceeds user expectations—ready for both Android and iOS platforms.</p>
+              <a href="mywork.html">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ------portofolio------- -->
+ <div id="portofolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="foto/uhope.png">
+                <div class="layer">
+                    <h3>Social Media Manager</h3>
+                    <p> Manage and grow your social media presence with creative strategies and engaging content for your brand or business.</p>
+                    <a href="mywork.html"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="foto/figma.png">
+                <div class="layer">
+                    <h3>Graphic designer & Logo</h3>
+                    <p>Professional graphic design and logo creation to help your brand stand out and make a lasting impression.</p>
+                    <a href="mywork.html"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="foto/vscode.png">
+                <div class="layer">
+                    <h3>Web Development</h3>
+                    <p>Build responsive and high-performance websites tailored to your business needs using the latest technologies.</p>
+                    <a href="mywork.html"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="mywork.html" class="btn">See more</a>
+    </div>
+ </div>
+<!-- ------contact------- -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>ecan26cas@gmail.com</p>
+                <p> <i class="fa-solid fa-phone"></i>+62 85210117121</p>
+                <p>Bandung</p>
+                <div class="social-icons">
+                <a href="https://www.instagram.com/christensensalaki_/"><i class="fa-brands fa-instagram"></i></a>
+                <a href=""><i class="fa-brands fa-facebook"></i></a>
+                <a href=""><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="https://www.linkedin.com/in/christensen-salaki/"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <a href="file/Profile.pdf" download class="btn btn2">Download Cv</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="name" placeholder="Your name" required>
+                    <input type="email" name="email" placeholder="Your email" required>
+                    <textarea name="Message"  rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright &copy; 2025 by <span>Christensen Salaki <i class="fa-solid fa-heart"></i></span></p>
+        <p>Designed by <span>Christensen Salaki</span></p>
+    </div>
+</div>
+
+<div class="parallax-bg" id="parallax-bg">
+  <div class="parallax-layer layer1"></div>
+  <div class="parallax-layer layer2"></div>
+  <div class="parallax-layer layer3"></div>
+</div>
+<canvas id="bg-particles"></canvas>
+<div class="lamp-switch" id="lampSwitch" title="Switch background">
+  <span class="lamp-glow"></span>
+  <i class="fa-solid fa-lightbulb"></i>
+</div>
+<div class="live-clock" id="liveClock"></div>
+<button id="backToTop" title="Back to Top">
+  <i class="fa-solid fa-arrow-up"></i>
+</button>
+<script src="script.js"></script>
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbzVzmrBKKxy-5STJQ3q9G32Tgu6zobPIw-egCA5PfEPgKRNirMKg1Jsn-nbGjOAweUY/exec'
+  const form = document.forms['submit-to-google-sheet']
+  const msg = document.getElementById("msg")
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+        msg.innerHTML = "yay! Your message has been sent successfully"
+        msg.style.color = "#00ff00"
+        setTimeout(() => {
+          msg.innerHTML = "already sent"
+          msg.style.color = "#fff"
+        }, 5000);
+        form.reset()
+      })
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
+<button id="translateBtn" style="position:fixed;bottom:100px;right:32px;z-index:999;background:#00fff0;color:#012c3a;padding:12px 22px;border:none;border-radius:8px;box-shadow:0 2px 16px #00fff088;cursor:pointer;font-weight:600;">
+  Translate
+</button>
+<script>
+// Simple translation dictionary (English <-> Indonesian)
+const translations = {
+  "Hello! I am a passionate designer and developer who loves creating modern, user-friendly digital experiences. I enjoy solving problems and bringing ideas to life through design and code.":
+    "Halo! Saya adalah desainer dan pengembang yang antusias menciptakan pengalaman digital modern dan ramah pengguna. Saya senang memecahkan masalah dan mewujudkan ide melalui desain dan kode.",
+  "Manage and grow your social media presence with creative strategies and engaging content for your brand or business.":
+    "Kelola dan kembangkan kehadiran media sosial Anda dengan strategi kreatif dan konten menarik untuk merek atau bisnis Anda.",
+  "Professional graphic design and logo creation to help your brand stand out and make a lasting impression.":
+    "Desain grafis profesional dan pembuatan logo untuk membantu merek Anda tampil menonjol dan berkesan.",
+  "Build responsive and high-performance websites tailored to your business needs using the latest technologies.":
+    "Bangun situs web responsif dan berkinerja tinggi sesuai kebutuhan bisnis Anda dengan teknologi terbaru.",
+  "About me": "Tentang saya",
+  "Skills": "Keahlian",
+  "Experience": "Pengalaman",
+  "Education": "Pendidikan",
+  "My Services": "Layanan Saya",
+  "UI/UX Design": "Desain UI/UX",
+  "Web Development": "Pengembangan Web",
+  "App Development": "Pengembangan Aplikasi",
+  "Learn more": "Selengkapnya",
+  "My Work": "Karya Saya",
+  "See more": "Lihat lainnya",
+  "Contact me": "Hubungi saya",
+  "Download Cv": "Unduh CV",
+  "Submit": "Kirim",
+  "Your name": "Nama Anda",
+  "Your email": "Email Anda",
+  "Your Message": "Pesan Anda",
+  "Copyright": "Hak Cipta",
+  "Designed by": "Dirancang oleh"
+};
+
+// Detect browser language
+function getUserLang() {
+  return navigator.language || navigator.userLanguage || "en";
+}
+
+let translated = false;
+document.getElementById('translateBtn').addEventListener('click', function() {
+  if (!translated) {
+    document.querySelectorAll('body, body *').forEach(el => {
+      if (el.childNodes.length === 1 && el.childNodes[0].nodeType === 3) {
+        const text = el.textContent.trim();
+        if (translations[text]) el.textContent = translations[text];
+      }
+      // Placeholder translation
+      if (el.placeholder && translations[el.placeholder]) {
+        el.placeholder = translations[el.placeholder];
+      }
+      // Button value translation
+      if (el.value && translations[el.value]) {
+        el.value = translations[el.value];
+      }
+    });
+    translated = true;
+    this.textContent = "Translate to English";
+  } else {
+    // Reverse translation
+    Object.entries(translations).forEach(([en, id]) => {
+      document.querySelectorAll('body, body *').forEach(el => {
+        if (el.childNodes.length === 1 && el.childNodes[0].nodeType === 3) {
+          if (el.textContent.trim() === id) el.textContent = en;
+        }
+        if (el.placeholder === id) el.placeholder = en;
+        if (el.value === id) el.value = en;
+      });
+    });
+    translated = false;
+    this.textContent = "Translate";
+  }
+});
+
+// Auto-translate if browser language is Indonesian
+if (getUserLang().startsWith('id')) {
+  setTimeout(() => document.getElementById('translateBtn').click(), 500);
+}
+</script>
+<div id="backsoundWrapper" style="position:fixed;bottom:32px;left:32px;z-index:999;display:flex;flex-direction:column;align-items:center;">
+  <div id="backsoundBubble" style="background:#012c3a;color:#fff;padding:8px 18px;border-radius:18px 18px 18px 4px;font-size:1rem;box-shadow:0 2px 16px #00fff088;margin-bottom:10px;white-space:nowrap;opacity:0;pointer-events:none;transition:opacity 0.3s;">
+    Listen to my cover song
+  </div>
+  <button id="backsoundBtn" title="Toggle Backsound" style="background:#00fff0;color:#012c3a;padding:14px 18px;border:none;border-radius:50%;box-shadow:0 2px 16px #00fff088;cursor:pointer;font-size:1.5rem;">
+    <i id="backsoundIcon" class="fa-solid fa-volume-off"></i>
+  </button>
+</div>
+<audio id="backsoundAudio" loop src="sounds/0207 9：16.mp3"></audio>
+<script>
+  const audio = document.getElementById('backsoundAudio');
+  const btn = document.getElementById('backsoundBtn');
+  const icon = document.getElementById('backsoundIcon');
+  let isPlaying = false;
+
+  btn.addEventListener('click', function() {
+    if (!isPlaying) {
+      audio.volume = 0.6;
+      audio.play();
+      icon.classList.remove('fa-volume-off');
+      icon.classList.add('fa-volume-up');
+      isPlaying = true;
+    } else {
+      audio.pause();
+      icon.classList.remove('fa-volume-up');
+      icon.classList.add('fa-volume-off');
+      isPlaying = false;
+    }
+  });
+
+  // Optional: Pause audio saat user keluar tab
+  document.addEventListener('visibilitychange', function() {
+    if (document.hidden && isPlaying) {
+      audio.pause();
+    } else if (!document.hidden && isPlaying) {
+      audio.play();
+    }
+  });
+</script>
+<script>
+  const backsoundBtn = document.getElementById('backsoundBtn');
+  const backsoundAudio = document.getElementById('backsoundAudio');
+  const backsoundIcon = document.getElementById('backsoundIcon');
+  const backsoundBubble = document.getElementById('backsoundBubble');
+
+  // Show bubble on hover/tap
+  function showBubble() {
+    backsoundBubble.style.opacity = '1';
+  }
+  function hideBubble() {
+    backsoundBubble.style.opacity = '0';
+  }
+  backsoundBtn.addEventListener('mouseenter', showBubble);
+  backsoundBtn.addEventListener('mouseleave', hideBubble);
+  // For mobile tap
+  backsoundBtn.addEventListener('touchstart', showBubble);
+  backsoundBtn.addEventListener('touchend', hideBubble);
+
+  // Toggle backsound play and pause
+  backsoundBtn.addEventListener('click', () => {
+    if (backsoundAudio.paused) {
+      backsoundAudio.play();
+      backsoundIcon.classList.remove('fa-volume-off');
+      backsoundIcon.classList.add('fa-volume-high');
+    } else {
+      backsoundAudio.pause();
+      backsoundIcon.classList.remove('fa-volume-high');
+      backsoundIcon.classList.add('fa-volume-off');
+    }
+  });
+</script>
+<script>
+const tabTitles = Array.from(document.querySelectorAll('.tab-links'));
+const tabContents = Array.from(document.querySelectorAll('.tab-contents'));
+let currentTab = 0;
+
+function showTab(idx, direction = 0) {
+  tabContents.forEach((tab, i) => {
+    tab.classList.remove('active-tab', 'slide-left', 'slide-right');
+    if (i === idx) {
+      tab.classList.add('active-tab');
+    } else if (i < idx) {
+      tab.classList.add('slide-left');
+    } else {
+      tab.classList.add('slide-right');
+    }
+  });
+  tabTitles.forEach((t, i) => t.classList.toggle('active-link', i === idx));
+  currentTab = idx;
+}
+
+// Tab click
+tabTitles.forEach((tab, i) => {
+  tab.onclick = () => showTab(i);
+});
+
+// Swipe/drag support
+let startX = null;
+const slider = document.querySelector('.tab-slider');
+slider.addEventListener('touchstart', e => startX = e.touches[0].clientX);
+slider.addEventListener('touchend', e => {
+  if (startX === null) return;
+  let dx = e.changedTouches[0].clientX - startX;
+  if (dx > 50 && currentTab > 0) showTab(currentTab - 1); // swipe right
+  if (dx < -50 && currentTab < tabContents.length - 1) showTab(currentTab + 1); // swipe left
+  startX = null;
+});
+// Desktop drag (optional)
+let dragX = null;
+slider.addEventListener('mousedown', e => dragX = e.clientX);
+slider.addEventListener('mouseup', e => {
+  if (dragX === null) return;
+  let dx = e.clientX - dragX;
+  if (dx > 50 && currentTab > 0) showTab(currentTab - 1);
+  if (dx < -50 && currentTab < tabContents.length - 1) showTab(currentTab + 1);
+  dragX = null;
+});
+
+// Inisialisasi
+showTab(currentTab);
+</script>
+</body>
+</html>
